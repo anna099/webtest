@@ -10,3 +10,7 @@ body {
     padding-top: 25px;
     text-align: center;
 }
+
+#vw17 { font-size: 1.7vw; }
+#vw2 { font-size: 2vw; }
+#vw10 { font-size: 10vw; }
