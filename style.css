@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#a {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid black;
+    padding-top: 25px;
+    text-align: center;
+}
