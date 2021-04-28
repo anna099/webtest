@@ -15,16 +15,17 @@ window.onload = function() {
 
 function is_mobile() {
     const matches = [
-        /Android/i,
-        /webOS/i,
-        /iPhone/i,
-        /iPad/i,
-        /iPod/i,
-        /BlackBerry/i,
-        /Windows Phone/i,
+        'Android',
+        'webOS',
+        'iPhone',
+        'iPad',
+        'iPod',
+        'BlackBerry',
+        'Windows Phone',
+        'Mobile',
     ];
 
     return matches.some((item) => {
-        return navigator.userAgent.match(item);
+        return navigator.userAgent.indexOf(item) >= 0;
     });
 }
