@@ -8,4 +8,23 @@ window.onload = function() {
 
     let b = document.querySelector('#b');
     b.innerHTML = 'User Agent:<br>' + navigator.userAgent;
+    if (is_mobile()) {
+        b.innerHTML += '<br>You are on mobile.';
+    }
+}
+
+function is_mobile() {
+    const matches = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i,
+    ];
+
+    return matches.some((item) => {
+        return navigator.userAgent.match(item);
+    });
 }
