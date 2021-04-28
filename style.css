@@ -3,11 +3,12 @@ body {
     padding: 0;
 }
 
-#a {
+#a, #b {
     width: 100%;
     min-height: 50px;
     border: 1px solid black;
-    padding-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 12px;
     text-align: center;
 }
 
